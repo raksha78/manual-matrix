@@ -8,9 +8,7 @@ pipelines:
          multiNode: true
         stepletMultipliers:
           environmentVariables:
-            - foo: "foo"
-            - foo: "bar"
-            - foo: "baz"
+          
         execution:
           onExecute:
             - echo $foo
