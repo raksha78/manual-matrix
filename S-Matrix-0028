@@ -8,14 +8,8 @@ pipelines:
           environmentVariables:
             - animal: dog
               bird: sparrow
-            - animal: cat
-              bird: crow
-            - animal: cow
-              bird: parrot
-            - animal: cat01
-              bird: crow01
-            - animal: cow01
-              bird: parrot01
+         #   - animal: cat
+         #    bird: crow 
           runtimes:
             - type: image
               image:
@@ -29,12 +23,7 @@ pipelines:
                   language: node
                   versions:
                     - 8.17.0    
-            - type: image
-              image:
-                auto:
-                  language: node
-                  versions:
-                    - 8.16.0   
+       
         execution:
           onExecute:
             - echo "Executing matrix step on ${steplet_id}"
