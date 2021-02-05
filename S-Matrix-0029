@@ -12,16 +12,10 @@ pipelines:
               bird: crow
             - animal: cow
               bird: parrot
-            - animal: cow1
-              bird: parrot1
+           # - animal: cow1
+           #   bird: parrot1
            
           runtimes:
-            - type: image
-              image:
-                auto:
-                  language: node
-                  versions:
-                    - 12
             - type: image
               image:
                 auto:
