@@ -16,7 +16,7 @@ pipelines:
                 auto:
                   language: node
                   versions:
-                    - 8.16.0 
+                    - "12.18.2"
             - type: image
               image:
                 auto:
