@@ -7,8 +7,8 @@ pipelines:
         stepletMultipliers:
           exclude:
            - environmentVariables:
-             delay: 1
-             fail: 'true'
+               delay: 1
+               fail: 'true'
           environmentVariables:
             - delay: 1
               fail: 'true'
