@@ -1,5 +1,7 @@
 pipelines:
   - name: S_Matrix_0029
+    configuration:
+          nodePool: u18_02
     steps:
       - name: S_Matrix_0029
         type: Matrix
