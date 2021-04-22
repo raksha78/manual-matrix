@@ -7,10 +7,10 @@ pipelines:
         stepMode: Bash
         stepletMultipliers:
           environmentVariables:
-             #- animal: dog
-              # bird: sparrow
-             #- animal: cat
-             #  bird: crow 
+             - animal: dog
+               bird: sparrow
+             - animal: cat
+               bird: crow 
           runtimes:
             - type: image
               image:
