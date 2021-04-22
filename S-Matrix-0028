@@ -1,5 +1,6 @@
 pipelines:
   - name: S_Matrix_0028
+    nodepool: u18dynamic
     steps:
       - name: S_Matrix_0028
         type: Matrix
