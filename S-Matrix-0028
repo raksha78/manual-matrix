@@ -7,9 +7,6 @@ pipelines:
         stepletMultipliers:
           environmentVariables:
              - animal: dog
-               bird: sparrow
-             - animal: cat
-               bird: crow 
           runtimes:
             - type: image
               image:
@@ -27,4 +24,3 @@ pipelines:
         execution:
           onExecute:
             - echo "Executing matrix step on ${steplet_id}"
-            - echo "Variation animal = ${animal}, bird = ${bird}"
