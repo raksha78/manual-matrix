@@ -14,6 +14,18 @@ pipelines:
               bird: crow
             - animal: cow
               bird: parrot
+            - animal: dog
+              bird: sparrow
+            - animal: cat
+              bird: crow
+            - animal: cow
+              bird: parrot
+            - animal: dog
+              bird: sparrow
+            - animal: cat
+              bird: crow
+            - animal: cow
+              bird: parrot
            
           runtimes:
             - type: image
@@ -28,12 +40,18 @@ pipelines:
                   language: node
                   versions:
                     - 8.16.0 
-           # - type: image
-           #   image:
-           #     auto:
-           #       language: node
-           #       versions:
-           #         - 12
+            - type: image
+              image:
+                auto:
+                  language: node
+                  versions:
+                    - 12
+            - type: image
+              image:
+                auto:
+                  language: node
+                  versions:
+                    - 0
           
         execution:
           onExecute:
