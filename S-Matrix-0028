@@ -7,7 +7,6 @@ pipelines:
         stepletMultipliers:
           environmentVariables:
              - animal: dog
-             - animal: cat
           runtimes:
             - type: image
               image:
@@ -20,13 +19,7 @@ pipelines:
                 auto:
                   language: node
                   versions:
-                    - 8.17.0 
-            - type: image
-              image:
-                auto:
-                  language: node
-                  versions:
-                    - 8.17.0 
+                    - 8.17.0
        
         execution:
           onExecute:
