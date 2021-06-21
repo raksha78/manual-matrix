@@ -6,7 +6,6 @@ pipelines:
         stepMode: Bash
         configuration:
          multiNode: true
-         nodePool: u18_01
         stepletMultipliers:
           environmentVariables:
             - foo: "foo"
