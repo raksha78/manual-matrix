@@ -2,7 +2,7 @@ resources:
  - name: resource_test_2
    type: GitRepo
    configuration:
-     gitProvider: test_pipeline
+     gitProvider: test_pipe
      path: raksha78/manual-matrix
      branches:
        include: ^{{gitBranch}}$
