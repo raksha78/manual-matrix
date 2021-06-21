@@ -1,0 +1,25 @@
+pipelines:
+  - name: S_Matrix_MN_008
+    steps:
+      - name: S_Matrix_MN_008
+        type: Matrix
+        stepMode: Bash
+        configuration:
+         multiNode: true
+         nodePool: u18_01
+        stepletMultipliers:
+          environmentVariables:
+            - foo: "foo"
+            - foo: "bar"
+            - foo: "baz"
+          runtimes:
+            - type: image
+              image:
+                auto:
+                  language: node
+                  versions:
+                    - 12.14.0
+            
+        execution:
+          onExecute:
+            - echo $foo
