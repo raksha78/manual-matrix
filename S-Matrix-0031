@@ -10,8 +10,6 @@ pipelines:
               bird: sparrow
             - animal: cat
               bird: crow
-            - animal: cat1
-              bird: crow1
           runtimes:
             - type: image
               image:
