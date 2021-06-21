@@ -6,7 +6,7 @@ pipelines:
         stepMode: Bash
         stepletMultipliers:
           environmentVariables:
-             - animal: dog
+            
           runtimes:
             - type: image
               image:
