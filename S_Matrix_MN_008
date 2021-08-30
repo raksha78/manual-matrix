@@ -1,12 +1,3 @@
-resources:
- - name: resource_test_2
-   type: GitRepo
-   configuration:
-     gitProvider: test
-     path: raksha78/manual-matrix
-     branches:
-       include: ^{{gitBranch}}$
-
 pipelines:
   - name: S_Matrix_MN_008
     steps:
