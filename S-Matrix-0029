@@ -6,16 +6,6 @@ pipelines:
         execution:
           onExecute:
              - echo "Hi from bash step"
-      - name : powershell_step
-        type: PowerShell
-        configuration:
-          nodePool: win_2019
-          inputSteps:
-            - name: bash_step
-        execution:
-          onExecute:
-            - write-output "Hi !!"
-            - docker images
       - name: S_Matrix_0029
         type: Matrix
         stepMode: Powershell
