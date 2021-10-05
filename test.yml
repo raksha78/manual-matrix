@@ -1,18 +1,18 @@
-resources:
- - name: resource_test
-   type: GitRepo
-   configuration:
-     gitProvider: raksha78_github
-     path: raksha78/manual-matrix
-     branches:
-       include: ^{{gitBranch}}$
- - name: resource_test_21
-   type: GitRepo
-   configuration:
-     gitProvider: test_pipeline
-     path: raksha78/manual-matrix
-     branches:
-       include: ^{{gitBranch}}$
+# resources:
+#  - name: resource_test
+#    type: GitRepo
+#    configuration:
+#      gitProvider: raksha78_github
+#      path: raksha78/manual-matrix
+#      branches:
+#        include: ^{{gitBranch}}$
+#  - name: resource_test_21
+#    type: GitRepo
+#    configuration:
+#      gitProvider: test_pipeline
+#      path: raksha78/manual-matrix
+#      branches:
+#        include: ^{{gitBranch}}$
 
 pipelines:
   - name: S_Matrix_MN_008
@@ -20,9 +20,9 @@ pipelines:
       - name: myStep112
         type: Bash
         configuration:
-          inputResources: 
-            - name: resource_test
-            - name: resource_test_21
+#           inputResources: 
+#             - name: resource_test
+#             - name: resource_test_21
           integrations:
             - name: raksha78_github
 #             - name: test_pipeline
