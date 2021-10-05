@@ -6,7 +6,7 @@ resources:
      path: raksha78/manual-matrix
      branches:
        include: ^{{gitBranch}}$
- - name: resource_test_2
+ - name: resource_test_21
    type: GitRepo
    configuration:
      gitProvider: test_pipeline
@@ -22,7 +22,7 @@ pipelines:
         configuration:
           inputResources: 
             - name: resource_test
-            - name: resource_test_2
+            - name: resource_test_21
           integrations:
             - name: raksha78_github
             - name: test_pipeline
