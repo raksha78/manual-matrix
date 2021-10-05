@@ -1,8 +1,21 @@
 pipelines:
   - name: S_Matrix_0029
-    configuration:
-          nodePool: ""
     steps:
+      - name: bash_step
+        type: Bash
+        execution:
+          onExecute:
+             - echo "Hi from bash step"
+      - name : powershell_step
+        type: PowerShell
+        configuration:
+          nodePool: win_2019
+          inputSteps:
+            - name: bash_step
+        execution:
+          onExecute:
+            - write-output "Hi !!"
+            - docker images
       - name: S_Matrix_0029
         type: Matrix
         stepMode: Bash
@@ -20,13 +33,7 @@ pipelines:
                 auto:
                   language: node
                   versions:
-                    - 8.17.0  
-            - type: image
-              image:
-                auto:
-                  language: node
-                  versions:
-                    - 8.16.0 
+                    - 8.17.0 
           
         execution:
           onExecute:
