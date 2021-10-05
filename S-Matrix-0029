@@ -18,7 +18,6 @@ pipelines:
             - docker images
       - name: S_Matrix_0029
         type: Matrix
-        stepMode: Bash
         configuration:
           nodePool: win_2019
           inputSteps:
