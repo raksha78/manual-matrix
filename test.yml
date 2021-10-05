@@ -25,7 +25,7 @@ pipelines:
             - name: resource_test_21
           integrations:
             - name: raksha78_github
-            - name: test_pipeline
+#             - name: test_pipeline
         execution:
           onExecute:
 #             - docker images
