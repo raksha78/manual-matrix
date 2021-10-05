@@ -30,14 +30,6 @@ pipelines:
               bird: crow
             - animal: cow
               bird: parrot
-          runtimes:
-            - type: image
-              image:
-                auto:
-                  language: node
-                  versions:
-                    - 8.17.0 
-          
         execution:
           onExecute:
             - echo "Executing matrix step on ${steplet_id}"
