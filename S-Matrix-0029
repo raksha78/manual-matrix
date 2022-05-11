@@ -8,9 +8,8 @@ pipelines:
              - echo "Hi from bash step"
       - name: S_Matrix_0029
         type: Matrix
-        stepMode: Powershell
+        stepMode: Bash
         configuration:
-          nodePool: win_2019
           inputSteps:
             - name: bash_step
         stepletMultipliers:
