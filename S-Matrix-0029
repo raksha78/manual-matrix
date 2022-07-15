@@ -23,6 +23,6 @@ pipelines:
         execution:
           onExecute:
             - echo "Executing matrix step on ${steplet_id}"
-            - sleep 3m
+            - sleep 1m
             - echo "Variation animal = ${animal}, bird = ${bird}"
-            - sleep 5m
+            - sleep 1m
