@@ -25,4 +25,3 @@ pipelines:
             - echo "Executing matrix step on ${steplet_id}"
             - sleep 1m
             - echo "Variation animal = ${animal}, bird = ${bird}"
-            - sleep 1m
